@@ -7,21 +7,24 @@
  body{
     min-height: 100vh;
     scroll-behavior: smooth;
+    background-image: url(/workspace-1280538_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
 /* navbar */
 .header{
-    position: fixed;
+    position: sticky;
+    flex-wrap: wrap;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-image: linear-gradient(lightblue,white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
+
 .RawTech{
     font-size: 52px;
     text-decoration: none;
@@ -29,10 +32,12 @@
     font-family: 'Quicksand', sans-serif;
     text-shadow: 4px 4px 6px;
     text-decoration: underline;
+    color: white;
 }
+
 .navbar a{
     font-size: 18px;
-    color: rgb(57, 78, 90);
+    color: beige;
     font-weight: bold;
     text-decoration: none;
     margin-left: 40px;
@@ -40,15 +45,66 @@
 }
 .navbar a:hover{
     content: '';
+    padding: 3px 10px;   
     position: relative;
     top: 100%;
     left: 0;
     width: 0;
-    height: 2px;
-    background: #fff;
+    height: 4px;
+    background: #000000;
     transition: 0s;
     border-radius: 8px;
 }
 .navbar a:hover::before{
     width: 100%;
+}
+
+/* HOME */
+#home{
+   height: 100vh;
+
+    
+}
+.container{
+    border: 1px solid; 
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    z-index: 700;
+    display: grid;
+
+}
+.raw{
+    border: solid;
+    font-family: 'Londrina Outline', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 4px 4px 8px;
+}
+.paragraph{
+    border: solid;
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+
+}
+.btn{
+    padding: 10px 35px;
+    width: 25%;
+    height: 30%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    outline: none;
+    transition: .6s ease;
+    border-radius: 8px;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 }
