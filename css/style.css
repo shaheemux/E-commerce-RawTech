@@ -14,6 +14,7 @@
 
 /* navbar */
 .header{
+    background-color: rgb(145, 141, 141);
     position: sticky;
     flex-wrap: wrap;
     top: 0;
@@ -23,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: .8;
 }
 
 .RawTech{
