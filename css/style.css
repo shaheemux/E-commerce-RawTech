@@ -46,7 +46,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 .navbar a:hover{
-    content: '';
     padding: 3px 10px;   
     position: relative;
     top: 100%;
