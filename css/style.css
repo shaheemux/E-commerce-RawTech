@@ -7,14 +7,17 @@
  body{
     min-height: 100vh;
     scroll-behavior: smooth;
-    background-image: url(/workspace-1280538_1920.jpg);
+    background-image: url(/IMG/workspace-1280538_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
  }
 
 /* navbar */
-.header{
+#nav-container{
     background-color: rgb(145, 141, 141);
+}
+
+.container-fluid{
     position: sticky;
     flex-wrap: wrap;
     top: 0;
@@ -28,37 +31,31 @@
 }
 
 .RawTech{
-    font-size: 52px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 4px 4px 6px;
-    text-decoration: underline;
-    color: white;
+    font-size: 45px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-family: 'Quicksand', sans-serif !important;
+    text-shadow: 4px 4px 6px !important;
+    text-decoration: underline !important;
+    color: rgb(255, 255, 255) !important;
 }
 
-.navbar a{
+.navbar li a{
     font-size: 18px;
-    color: beige;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
     margin-left: 40px;
     font-family: 'Quicksand', sans-serif;
 }
-.navbar a:hover{
-    padding: 3px 10px;   
-    position: relative;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background: #000000;
+.navbar li a:hover{
+    width: 120px;
+    background: #5b5555;
     transition: 0s;
     border-radius: 8px;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 }
-.navbar a:hover::before{
-    width: 100%;
-}
+
 
 /* HOME */
 #home{
@@ -81,6 +78,7 @@
     font-weight: bold;
     color: aliceblue;
     text-shadow: 4px 4px 8px;
+
 }
 .paragraph{
     border: solid;
@@ -109,3 +107,27 @@
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 }
+
+/* aboutus */
+
+#AboutUs{
+    background-image: linear-gradient(lightskyblue,white)!important;
+    height: 100vh;
+}
+
+#nav-container1{
+
+}
+
+/* Product */
+
+
+.container4{
+  
+
+    
+}
+.Container4 img{
+    width: 320px;
+}
+
