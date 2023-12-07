@@ -51,10 +51,30 @@ window.onload = function () {
     mainContent.innerHTML = products.join('')
 }
 
+// searchbar
 
 
-// this.id = id;
-// this.name = name;
-// this.specs = specs;
-// this.price = price;
-// this.url = url;
+let output = document.querySelector('#results')
+
+let searchbtn = document.querySelector('#searchBtn')
+searchbtn.addEventListener('click', () => {
+  let searched = document.querySelector('#searchInput').value.toLowerCase()
+  switch (searched) {
+    case 'cosair':
+      output.innerHTML = search
+      break;
+  
+    default:
+      break;
+  }
+})
+
+
+// switch (key) {
+//   case value:
+    
+//     break;
+
+//   default:
+//     break;
+// }
