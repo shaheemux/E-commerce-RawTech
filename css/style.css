@@ -112,8 +112,17 @@
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 5rem;
     padding: 8px 100px;
+    height: 120vh;
 }
 
+.card-content{
+    border: 1px solid;
+    color: #ffffff;
+}
+.card-content:hover{
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    cursor: pointer;
+}
 
 /* Spinner */
 
@@ -126,20 +135,29 @@
 
 /* Admin */
 
-.content{
-    aspect-ratio: 2/;
+.content-card{
+    border-radius: 4px;
+    color: #ffffff;
+    aspect-ratio: 2/0;
     width: 15rem;
     row-gap: 0;
-    background-image: radial-gradient(hotpink,white)!important;
+    border: 1px solid!important;
+
     
 }
 
-main, .content{
-
-    justify-content: center;
-
+.content-card:hover,
+.card-body:hover{
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    cursor: pointer;
 
 }
+
+.card-body{
+    border: 1px solid;
+
+}
+
 
 
 

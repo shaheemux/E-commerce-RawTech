@@ -32,12 +32,13 @@ function admin() {
      products = computerArray.map(function (item, index) {
         return `
         
-    <div class="content card h-100 z-n1 m-4">
+    <div class="content-card h-100 z-n1 m-5">
       <img src="${item.url}" class="card-img-top" alt="...">
+
       <div class="card-body">
-        <h5 class="card-title">${item.name}</h5>
-        <p class="card-text">${item.specs}</p>
-        <p class="price">${item.price}</p>
+        <h5 class="card-title text-center text-white">${item.name}</h5>
+        <p class="card-text text-center m-1 text-white">${item.specs}</p>
+        <p class="price text-center  text-white">${item.price}</p>
       </div>
     </div>
 

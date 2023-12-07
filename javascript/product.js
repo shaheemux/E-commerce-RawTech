@@ -35,9 +35,9 @@ window.onload = function () {
     let products = computerArray.map(function (item, index) {
         return `
         
-    <div class="card h-100 z-n1 m-4 ">
+    <div class="card-content h-100 z-n1 m-4 ">
       <img src="${item.url}" class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body text-white text-center text-wrap>
         <h5 class="card-title">${item.name}</h5>
         <p class="card-text">${item.specs}</p>
         <p class"price">${item.price}</p>
@@ -50,37 +50,7 @@ window.onload = function () {
 
     mainContent.innerHTML = products.join('')
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    const sortAlphabeticallyButton = document.getElementById('sortAlphabeticallyButton');
-    const sortByPriceButton = document.getElementById('sortByPriceButton');
-    const cartCount = document.getElementById('searchResults');
-    const searchResultds = document.getElementById('searchResults');
-    
-    let Products = [
-        { name: 'Cosair', price: 'R5,999'},
-        { name: 'AMD', price: 'R2,500'},
-        { name: 'CoolerMaster', price: 'R6,899'},
-        { name: 'Gigabyte', price: 'R4,999'},
-        { name: 'Intel Core i5', price: 'R4,599'},
-        { name: 'COSAIR', price: 'R6,499'},
-    ];
 
-    let cartItmes = [];
-
-    searchInput.addEventListener('input' , function (){
-        const query = searchInput.ariaValueMax.toLowerCase();
-        const filterProducts = products.filter(product => product.name.toLowerCase().includes(query));
-        displayProducts(products);
-    });
-
-    sortAlphabeticallyButton.addEventListener('click' , function (){
-        products = products.sort((a, b) => a.price - b.price);
-        displayProducts(products);
-    });
-
-
-});
 
 
 // this.id = id;
