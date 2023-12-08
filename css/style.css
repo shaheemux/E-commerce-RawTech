@@ -4,14 +4,41 @@
     box-sizing: border-box;
     flex-wrap: wrap;
  }
- body{
-    min-height: 100vh;
-    scroll-behavior: smooth;
+ .landing{
+    height: 200vh;
     background-image: url(https://i.postimg.cc/GpDJtvKt/computer-1844996.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
  }
 
+ /* footer */
+
+ footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+ }
+ #footer{
+    font-family: cincel;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #000000;
+
+ }
+
+ @media all and (max-width: 380px){
+    #footer{
+        font-size: 15px;
+
+    }
+    .landingpage{
+        position: relative;
+        top: 24rem
+     }
+ }
 /* navbar */
 
 #nav-container{
@@ -20,7 +47,7 @@
 
 
 .container-fluid{
-    position: sticky;
+    position: -webkit-sticky;
     flex-wrap: wrap;
     top: 0;
     left: 0;
@@ -70,8 +97,7 @@
 /* HOME */
 
 .container{
-    /* border: solid; */
-    min-height: 100vh;
+
     display: flex;
     z-index: 1;
     flex-wrap: wrap;
@@ -83,7 +109,6 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 8rem;
-    background-image: radial-gradient(hotpink,rgb(104, 90, 90));
     background: transparent;
     border-radius: 15px;
     text-shadow: 4px 4px 6px !important;
@@ -97,6 +122,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 85px;
     
 }
 
@@ -105,7 +131,7 @@
         font-size: 2rem;
         transform: rotate(1deg);
         position: relative;
-        bottom: 15rem;
+        bottom: 1rem;
         z-index: -1;
     }
 
@@ -114,14 +140,51 @@
 /* AboutUs */
 
 #AboutUs{
-    background-image: url(https://i.postimg.cc/z3mH9Qmk/video-games-1136046.jpg);
-    height: 100vh;
+   background-color: lightgrey;
+   opacity: .8;
+    
+}
+
+.AboutUs{
+    height: 90vh;
+    display: grid;
+}
+
+#company1{
+    margin: auto;   
+}
+#CompanyContent{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000000;
+    margin: auto;
+}
+
+
+
+
+
+#aboutnav{
+    background-color: grey;
+}
+
+
+/* media queries for aboutpage */
+@media all and (max-width: 380px){
+    .AboutUs{
+        height: 100vh !important;
+    }
+
 }
 
 
 
 
 /* Product */
+
+.Product{
+    background-image: linear-gradient(rgb(80, 67, 67),white);
+}
 
 .gridContainer {
     display: grid;
@@ -141,14 +204,15 @@
     cursor: pointer;
 }
 
+@media all and (max-width: 380px){
+    .gridContainer{ 
+        position: relative;
+        right: 7rem;
+       
+        }
+    }
+
 /* Spinner */
-
-
-
-
-
-/* SearchBar searchbtn , sortbtn */
-
 
 /* Admin */
 
