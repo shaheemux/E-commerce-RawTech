@@ -51,7 +51,7 @@ window.onload = function () {
     mainContent.innerHTML = products.join('')
 }
 
-// searchbar
+// searchbar not working but i will do better next time ps this is pain 
 
 
 let output = document.querySelector('#results')
@@ -78,3 +78,5 @@ searchbtn.addEventListener('click', () => {
 //   default:
 //     break;
 // }
+
+//i need more time going though javascript to understand the fundamentals better , ps this is everything i did on my own without a.i or youtube videos . if a.i is detected it is the intergrated ai that is with vs studio. #pain 
